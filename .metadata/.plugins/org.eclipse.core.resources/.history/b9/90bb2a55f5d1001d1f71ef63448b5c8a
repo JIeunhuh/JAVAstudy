@@ -1,0 +1,12 @@
+package Chapter2;
+
+public class Test13 {
+	public static void main(String[] args) {
+		
+		byte a = 0b1001; // 2진수 표현은 0b로 시작
+		byte b = 0b1111;
+	//	byte c = a & b; 연산결과를 
+		int c = a & b; // bit연산 &   
+		System.out.println(Integer.toBinaryString(c));
+	}
+} 

@@ -1,0 +1,12 @@
+package Chapter3;
+
+public class Mission1 {
+	public static void main(String[] args) {
+ // 국영수 세과목의 점수 입력 받은 뒤 평균 구해서 70점 이상일때 통과, 60점 미만이면 과락으로 통과하지 못함		
+		
+		int math=0;
+		int kor=0;
+		int eng=0;
+	
+	}
+}

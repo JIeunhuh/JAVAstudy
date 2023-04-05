@@ -1,0 +1,12 @@
+package Chapter2;
+
+public class Test2 {
+	public static void main(String[] args) {
+		
+		int depositAmount;		
+		depositAmount = 50;
+		System.out.println(depositAmount); //출력
+		System.out.println(" depositAmount = "+depositAmount);//depositAmount = 50
+	}
+}
+

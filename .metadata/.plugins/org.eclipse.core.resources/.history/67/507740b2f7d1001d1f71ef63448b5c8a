@@ -1,0 +1,17 @@
+package edu;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+//		System.out.println("Hello");
+//		System.out.println("Hello World");
+
+		int a = 10;
+		int b = 5;
+		b += a;
+		System.out.println(b);
+		System.out.println(a);
+	} //문자열 출력
+
+}

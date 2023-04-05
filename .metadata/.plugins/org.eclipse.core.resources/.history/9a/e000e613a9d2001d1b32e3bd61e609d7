@@ -1,0 +1,19 @@
+package Chapter3;
+
+public class Test19 {
+ // @Override 어노테이션
+	public static void main(String[] args) {
+		int score = 95;
+		String result = "";
+		
+		if(score>=70) {
+			result = "합격입니다";
+			
+		}
+		else {
+			result = "불합격입니다"
+		}
+		System.out.println(result);
+	
+	}
+}

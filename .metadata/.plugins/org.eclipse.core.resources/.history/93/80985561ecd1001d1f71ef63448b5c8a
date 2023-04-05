@@ -1,0 +1,18 @@
+package Chapter2;
+
+public class Test7 {
+	public static void main(String[] args) {
+		/*int a =10, b=0;
+		
+		b = a++;
+		
+		System.out.println(b);
+*/
+		int a=10;
+		aa=a++;
+		System.out.println(aa);
+		++a;
+		System.out.println(a);
+				
+	}
+}

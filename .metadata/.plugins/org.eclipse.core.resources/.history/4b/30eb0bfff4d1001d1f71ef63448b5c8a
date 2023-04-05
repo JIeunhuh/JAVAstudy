@@ -1,0 +1,11 @@
+package Chapter2;
+
+public class Test13 {
+	public static void main(String[] args) {
+		
+		byte a = 0b1001; // 1001로 입력하면 int로 인식하므로 0b입력
+		byte b = 0b0110;
+	//	byte c = a & b; 연산결과를 
+		int c = a & b; // bit연산 &   
+	}
+} 

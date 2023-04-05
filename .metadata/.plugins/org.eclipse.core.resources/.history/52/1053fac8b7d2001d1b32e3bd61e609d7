@@ -1,0 +1,26 @@
+package Chapter3;
+
+public class Test27 {
+	public static void main(String[] args) {
+		int i = 9;
+		do {
+			System.out.println("do-while OK");
+			i--;
+		}
+		while(0<=i);
+	//do~while문 : 조건이 안맞아도 무조건 한번 실행되고 멈춤 | 변수 선언, do{실행문, 증감식}, while(조건식) 
+	
+		int j = 1;
+		while(j<=10) {
+			System.out.println("while OK");
+			j++;
+		
+		}
+		// while문 : 변수 선언 , while(조건식){ 실행문 , 증감식}
+	
+		for(int k=10; k>0; k--) {
+			System.out.println("for OK");
+		}
+		// for문 : for(변수 선언;, 조건식;, 증감식){실행문} 
+	}	
+}

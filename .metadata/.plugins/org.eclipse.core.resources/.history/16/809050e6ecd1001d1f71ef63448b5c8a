@@ -1,0 +1,18 @@
+package Chapter2;
+
+public class Test7 {
+	public static void main(String[] args) {
+		int a =10, b=0;
+		
+		b = ++a;
+		
+		System.out.println(b);
+
+//		int a=10;
+//		int aa=a++;
+//		System.out.println(aa);
+//		++a;
+//		System.out.println(a); // n++ : n을 먼저 사용후 증가 / ++n : 1먼저 증가시킨 후 n 사용(for문에서 많이 사용)
+//				
+	}
+}

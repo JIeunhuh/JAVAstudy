@@ -1,0 +1,8 @@
+package Chapter3;
+
+public class Test19 {
+ // @Override 어노테이션
+	public static void main(String[] args) {
+	
+}
+}

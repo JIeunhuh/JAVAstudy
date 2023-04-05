@@ -1,0 +1,12 @@
+package Chapter3;
+
+public class Test27 {
+	public static void main(String[] args) {
+		int i = 10;
+		do {
+			System.out.println("do-while OK");
+			i--;
+		}
+		while(i<=0);
+	}
+}
