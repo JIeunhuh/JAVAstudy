@@ -3,16 +3,9 @@ package edu;
 public class Test1 {
 
 	public static void main(String[] args) {
-		
-//		System.out.println("Hello");
-//		System.out.println("Hello World");
 
-		int a = 10;
-		int b = 5;
-		b += a++;
-		System.out.println(b);
-		b = 3 + a;
-		System.out.println(b);
-	} //문자열 출력
+		System.out.println("Hello" + args[0]);
+		System.out.println("Hello World");
 
+	}
 }
