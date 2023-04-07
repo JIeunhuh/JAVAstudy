@@ -1,7 +1,7 @@
 package Chapter4_array;
 
 public class Mission_2_1 {
-
+//다시 해야함  !!
 	public void matrix() { // 행렬 곱셈
 
 
@@ -26,10 +26,10 @@ public class Mission_2_1 {
 
 	}
 
-	public static void main(String[] args) {
-		Mission_2_1 m = new Mission_2_1(); // m = 인스턴스(참조 변수)
-
-		m.matrix(); // 위의 void matrix의 결과를 m.matrix로 호출
-		
-	}
+//	public static void main(String[] args) {
+//		Mission_2_1 m = new Mission_2_1(int[row][col]); // m = 인스턴스(참조 변수)
+//
+//		System.out.println(m.matrix); // 위의 void matrix의 결과를 m.matrix로 호출
+//		
+//	}
 }

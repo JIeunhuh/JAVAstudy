@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Exam01 {
 //	public static void main(String[] args) {
+	
 //
-//		Armor armor = new Armor();// 만든 Class Armor 불러옴
-//
+//		Armor armor = new Armor();// 만든 Class Armor 불러옴 | Class 생성 ;new=키워드, Armor()=class
+//		
 //		armor.setName();// 메서드 호출
 //
 //		armor.getName();

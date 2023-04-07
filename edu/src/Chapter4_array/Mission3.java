@@ -6,12 +6,11 @@ public class Mission3 {
 //		int year = 2023;
 		int[] year_arr = new int[40];
 		int idx = 0;
-
+		//문제 로직
 		// year가 윤년이면 year_arr에 추가
 		// year_arr[idx++]=year
-
-		// year_arr가 가득차면 break, 그렇지 않으면 year 1++하고 반복
 		// year++
+		// year_arr가 가득차면 break, 그렇지 않으면 year 1++하고 반복
 
 //		while (true) {
 //			if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {

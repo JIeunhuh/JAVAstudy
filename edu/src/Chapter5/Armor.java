@@ -17,16 +17,16 @@ public class Armor {
 	private String name;
 	private Boolean isFly;
 
-	public void setName() {
+	public void setName() { //private로 선언된 필드에 데이터를 설정하는 메서드 ; '세터'라고 함
 		String value = "mark6";
 		name = value;
-	}
+	} //ex. public void setName(String value){ name = value; }
 
-	public String getName() { //String형의 data를 리턴
+	public String getName() { //String형의 data를 리턴 | private로 선언된 필드값을 반환하는 메서드 ; '게터'
 		
 		if(name == null)
 			System.out.println("No name");
 		
 		return name; // return : 이 메소드를 끝내고 돌아가라
 	}
-}
+}//ex. public void getName() {return name;}
