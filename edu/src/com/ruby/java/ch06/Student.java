@@ -1,28 +1,73 @@
 package com.ruby.java.ch06;
 
-//1. class 이후의 첫자는 대문자, 함수는 소문자
+//하나의 java file에 Student 객체를 정의하고 구현하는 실습
+/*
+ * 생성자 함수 구현 - this(); 호출 사용
+ * static 데이터 멤버 사용
+ * static 멤버 함수 구현
+ * toString() 함수 구현과 사용
+ * 객체 배열 사용
+ */
 public class Student {
-	private int sid;
-	private String name;
-	private String dept;
+	static int countStudents;// 객체수
+	int sid;// 학번
+	String sname; // 학생 이름
+	String city; // 주소 도시
+
+	
+	public String toString() {
+		return sid+":"+sname+":"+city;
+	}
+	
+	void showStudent() {
+		System.out.print("객체: ");
+		this.toString();
+		System.out.println(toString());
+	}
+
+	static void showNumberObjects() {// 생성된 객체수를 출력한다.
+
+		System.out.println(countStudents);
+	}
+
+	// 생성자 구현한다.
 
 	public Student() {
-	}// default 생성자
+		this(0);
+	}
 
-	public Student(int sid, String name, String dept) {// daya type 써야함
+	public Student(int sid) {
+		this(sid, null); //name이 없기 때문에 null값을 넣어 줘야함 / 값이 없음\
+		
+	}
+
+	public Student(int sid, String sname) {
+		this(sid, sname, null);
+	}
+
+	public Student(int sid, String sname, String city) {
 		this.sid = sid;
-		this.name = name;
-		this.dept = dept; // this.메소드명 : receiver object(수신 객체)
+		this.sname = sname;
+		this.city = city;
+		countStudents++;//생성자 안에 객체 수 증감식 넣기
 	}
 
-	public static void main(String[] args) { // class생성하고 같은 파일에 main 생성 비추비추
-		System.out.println("6장 시작");
-		// int n=10;
+	public static void main(String[] args) {
 
-		Student s = null;
-		// s=new Student();
-		s = new Student(2023, "홍길동", "컴퓨터"); // new 객체 생성
-		System.out.println(s.sid + ", " + s.name + ", " + s.dept); // private이지만 class내에 있으므로 사용가능
-		System.out.println("Student 객체 : " + s);
+		int[] a = new int[5];
+		Student arry[] = new Student[5];
+		showNumberObjects();
+		arry[0] = new Student();
+		arry[1] = new Student(202301);
+		arry[2] = new Student(202302, "Hong");
+		arry[3] = new Student(202303, "Lee", "Busan");
+		arry[4] = new Student(202304, "Na", "jeju");
+		showNumberObjects();
+		for (int i = 0; i < 5;i++) {
+			arry[i].showStudent();// 생성된 객체 모두를 출력한다.
+		
+		}
+	
 	}
+
 }
