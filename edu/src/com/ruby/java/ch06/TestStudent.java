@@ -14,21 +14,6 @@ class Student1 {
 	String sname; // 학생 이름
 	String city; // 주소 도시
 
-	public String toString() {
-		return sid + ":" + sname + ":" + city;
-	}
-
-	void showStudent() {
-		System.out.print("객체: ");
-		this.toString();
-		System.out.println();
-	}
-
-	static void showNumberObjects() {// 생성된 객체수를 출력한다.
-
-		System.out.println(countStudents);
-	}
-
 	public Student1() {
 		this(0);
 	}
@@ -46,7 +31,24 @@ class Student1 {
 		this.sname = sname;
 		this.city = city;
 		countStudents++;
+
 	}
+
+	public String toString() {
+		return sid + ":" + sname + ":" + city;
+	}
+
+	public void showStudent() {
+		System.out.print("객체: ");
+		this.toString();
+		System.out.println(toString()); //string 문자열 넣으셈 !
+	}
+
+	public static void showNumberObjects() {// 생성된 객체수를 출력한다.
+
+		System.out.println(countStudents);
+	}
+
 }
 
 public class TestStudent {
@@ -61,11 +63,10 @@ public class TestStudent {
 		arry[3] = new Student1(202303, "Lee", "Busan");
 		arry[4] = new Student1(202304, "Na", "jeju");
 		Student1.showNumberObjects();
-		
 
 		for (int i = 0; i < 5; i++) {
 			arry[i].showStudent();// 생성된 객체 모두를 출력한다.
-		System.out.println();
+
 		}
 	}
 

@@ -1,4 +1,4 @@
-package Chapter4_array;
+package Mission;
 
 public class Mission_2 {
 	public static void main(String[] args) {

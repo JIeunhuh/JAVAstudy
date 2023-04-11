@@ -1,4 +1,4 @@
-package Chapter4_array;
+package Mission;
 
 //2023년 이후 윤년 10개를 찾아서 배열에 저장하고 이를 출력하는 메소드를 구현
 public class Mission3 {
