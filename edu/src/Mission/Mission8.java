@@ -10,13 +10,13 @@ public class Mission8 {
 		Scanner sc = new Scanner(System.in);
 
 		int num = sc.nextInt();
-		int p =1;
+		int f =1;
 
 		for (int i = 1; i <= num; i++) {
-			p *= i;
+			f *= i;
 
 		}
-		System.out.println(p);
+		System.out.println(f);
 	
 		sc.close();
 	}

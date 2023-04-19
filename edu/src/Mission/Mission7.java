@@ -15,24 +15,37 @@ public class Mission7 {
 		int maxnum = 0;
 		int minnum = 0;
 		// rem==0 , 최대공약수 = 작은정수, 최소공배수 = 두정수의 곱/최대공약수
-		for (int i=max; ; ) {
-			if (rem == 0) {
+//		for (int i=max; ; ) {
+//			if (rem == 0) {
+//				minnum = min;
+//				maxnum = (min * i) / minnum;
+//			}
+//			// rem !=0, max=min,min=rem,2번 반복
+//			else {
+//				i = min;
+//				min = rem;
+//				i = min;
+//				min = rem;
+//				
+//				
+//			} //좀만 고쳐도 될거 가틈ㅜㅜ
+//			
+		while (max >= min) {
+			if (rem != 0) {
+				max = min;
+				min = rem;
+				min = max;
+				min = rem;
+			} else {
 				minnum = min;
-				maxnum = (min * i) / minnum;
+				maxnum = (min * minnum) / minnum;
 			}
-			// rem !=0, max=min,min=rem,2번 반복
-			else {
-				i = min;
-				min = rem;
-				i = min;
-				min = rem;
-				
-			} //좀만 고쳐도 될거 가틈ㅜㅜ
-			System.out.println("최대공약수 : " + maxnum);
-			System.out.println("최소공백수 : " + minnum);
-
-			sc.close();
+			break;
 		}
+		System.out.println("최대공약수 : " + maxnum);
+		System.out.println("최소공백수 : " + minnum);
 
+		sc.close();
 	}
+
 }
